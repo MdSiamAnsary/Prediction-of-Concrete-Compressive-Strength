@@ -571,9 +571,4 @@ R² = 0.936 means about 93.6 % of the variance is explained; the MAE is below 7.
 
 ---
 
-### Implementation notes
 
-- **Stacking folds:** the value of K in Sect. 4.5 is garbled in the PDF text layer. The code uses K = 5 to match the 5-fold CV used throughout the paper. Change `STACK_FOLDS` if the published value differs.
-- **Where PIF are applied:** the code follows the Fig. 2 order (FE → PIF → HPO → stacking), so the three base learners are tuned and trained on the 14 domain features plus their 91 pairwise interaction terms.
-- **Table 7 feature set:** the code uses the 14 domain features without PIF. The default-XGBoost row (R² 0.916) is close to A2 (0.918) and far from A3 (0.885), which suggests this is the setting used.
-- **MLP:** `max_iter=1000` is set so that the default MLP converges. All other settings are scikit-learn defaults.
