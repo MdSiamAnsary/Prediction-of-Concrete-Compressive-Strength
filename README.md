@@ -1,6 +1,6 @@
 # Prediction of Concrete Compressive Strength
 
-This repository holds the code, papers and data for two published studies by **Md. Siam Ansary** (Department of CSE, Ahsanullah University of Science and Technology) on predicting concrete compressive strength with stacking ensembles of gradient-boosting models.
+This repository holds the code, papers and data for two published studies on predicting concrete compressive strength with stacking ensembles of gradient-boosting models.
 
 Both studies use the same benchmark dataset. They pursue different goals:
 
@@ -45,7 +45,7 @@ Each work folder includes a copy of the dataset (`concrete+compressive+strength.
 - **SHAP ranking:** the strongest predictors are cement (6.92 MPa mean |SHAP|), log curing age (4.85) and the derived **W/B ratio** (2.87).
 - **Ablation:** stacking is the most important component. Polynomial interaction features hurt a single XGBoost model (R² drops to 0.885).
 
-📁 Folder: [`A hybrid stacking ensemble framework with domain-informed feature engineering for accurate prediction of concrete compressive strength`](./A%20hybrid%20stacking%20ensemble%20framework%20with%20domain-informed%20feature%20engineering%20for%20accurate%20prediction%20of%20concrete%20compressive%20strength/)
+📁 Folder: [`A hybrid stacking ensemble framework with domain-informed feature engineering for accurate prediction of concrete compressive strength`](https://github.com/MdSiamAnsary/Prediction-of-Concrete-Compressive-Strength/tree/main/A%20hybrid%20stacking%20ensemble%20framework%20with%20domain-informed%20feature%20engineering%20for%20accurate%20prediction%20of%20concrete%20compressive%20strength)
 
 ---
 
@@ -79,7 +79,7 @@ Each work folder includes a copy of the dataset (`concrete+compressive+strength.
   - Out-of-fold stacking gives the largest single gain, to 0.945.
   - Uncertainty modeling adds confidence bounds without changing the point accuracy.
 
-📁 Folder: [`Physics-Informed and Uncertainty-Aware Stacking Ensemble for Robust Prediction of Concrete Compressive Strength`](./Physics-Informed%20and%20Uncertainty-Aware%20Stacking%20Ensemble%20for%20Robust%20Prediction%20of%20Concrete%20Compressive%20Strength/)
+📁 Folder: [`Physics-Informed and Uncertainty-Aware Stacking Ensemble for Robust Prediction of Concrete Compressive Strength`](https://github.com/MdSiamAnsary/Prediction-of-Concrete-Compressive-Strength/tree/main/Physics-Informed%20and%20Uncertainty-Aware%20Stacking%20Ensemble%20for%20Robust%20Prediction%20of%20Concrete%20Compressive%20Strength)
 
 ---
 
