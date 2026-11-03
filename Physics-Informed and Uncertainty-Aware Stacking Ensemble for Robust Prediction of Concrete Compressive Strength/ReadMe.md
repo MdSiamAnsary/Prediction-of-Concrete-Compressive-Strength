@@ -551,9 +551,4 @@ Key findings reported:
 
 ---
 
-### Implementation notes
 
-- **Unreported settings:** the paper does not give search ranges, the number of trials, the ElasticNet α/λ, or the quantile-regressor hyperparameters. The code uses standard choices for these and marks them as such.
-- **Superplasticizer ratio:** Sect. 3 lists it among the derived features, but Eqs. 2–5 omit it. The code includes it as `sp_b`. Remove it from `add_domain_features` to match the equations exactly.
-- **Interval level:** Sect. 4.6 defines the interval as [ŷ₀.₁, ŷ₀.₉], which is a nominal 80 % interval, but Table 3 labels PICP as a "90 % interval". The code follows Sect. 4.6. For a nominal 90 % interval, set `TAUS = [0.05, 0.5, 0.95]`.
-- **Quantile branch:** the code trains it on the training-set OOF meta-features and evaluates it on the test-set meta-features. This is how "no additional data leakage" in Sect. 4.6 is read here.
